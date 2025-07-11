@@ -2,7 +2,7 @@
 Import-Module PnP.PowerShell
 
 # Connect to SharePoint Online
-Connect-PnPOnline -Url "https://bcstechinternational.sharepoint.com/sites/Versioning" -UseWebLogin
+Connect-PnPOnline -Url "https://your-tenant.sharepoint.com/sites/sitename" -UseWebLogin
 
 # Get all document libraries in the site
 $Libraries = Get-PnPList | Where-Object { $_.BaseType -eq "DocumentLibrary" -and $_.Hidden -eq $false }
